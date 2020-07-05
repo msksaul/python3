@@ -1,5 +1,11 @@
 sc = input('Enter score: ')
-score = float(sc)
+
+try:
+    score = float(sc)
+except:
+    print('Score must be a number')
+    quit()
+
 if score > 1.0:
     print('Score out of range')
 elif score >= 0.9:
